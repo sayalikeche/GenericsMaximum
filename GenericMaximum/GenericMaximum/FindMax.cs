@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Genericmaximum
+namespace MaximumGeneric
 {
-    public class FindMax
+    public class Findmaximumnum
     {
         public int Computemax(int firstnumber, int secondnumber, int thirdnumber)
         {
@@ -36,6 +36,21 @@ namespace Genericmaximum
             else
             {
                 return thirdnumber;
+            }
+        }
+        public string Computemaximum(string firstword, string secondword, string thirdword)
+        {
+            if (firstword.CompareTo(secondword) > 0 && firstword.CompareTo(thirdword) > 0)
+            {
+                return firstword;
+            }
+            if (secondword.CompareTo(firstword) > 0 && secondword.CompareTo(thirdword) > 0)
+            {
+                return secondword;
+            }
+            else
+            {
+                return thirdword;
             }
         }
     }
